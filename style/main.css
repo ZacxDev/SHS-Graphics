@@ -1,5 +1,5 @@
 .project {
-  width: 19%;
+  width: 22%;
   height: auto;
   margin-right: 2%;
   margin-top: 2%;
@@ -19,9 +19,18 @@
 
 .project_grid {
   margin-top: 5%;
-  margin-left: 15%;
+  margin-left: 13%;
+  text-align: center;
+  width: 70%;
+  background-color: rgba(0,0,0,0.4);
+padding: 2%;
+border-radius: 20px;
 }
 
 body {
-  background-color: #777;
+}
+
+.z_top {
+  z-index: 10;
+  position:absolute;
 }
