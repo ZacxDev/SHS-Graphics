@@ -1,8 +1,16 @@
-.project {
-  width: 22%;
-  height: auto;
+.project_img, #canvas {
   margin-right: 2%;
   margin-top: 2%;
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+#canvas {
+  position: absolute;
+  max-width: 100%;
+  top: 42%;
+  left: 15%;
+  display: none;
 }
 
 .title_div {
@@ -23,8 +31,8 @@
   text-align: center;
   width: 70%;
   background-color: rgba(0,0,0,0.4);
-padding: 2%;
-border-radius: 20px;
+  padding: 2%;
+  border-radius: 20px;
 }
 
 body {
@@ -33,4 +41,26 @@ body {
 .z_top {
   z-index: 10;
   position:absolute;
+  width: 100%;
+}
+
+.project_desc {
+  position: absolute;
+  width: 100%;
+  color: white;
+}
+
+.project_grid_item {
+  width: 20%;
+  height: 20%;
+}
+
+.desc_wrapper {
+  position: absolute;
+  width: 14%;
+  height: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  display: none;
+  z-index: 100;
 }

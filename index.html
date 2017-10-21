@@ -16,12 +16,14 @@
   </head>
 
   <div class="project_grid">
-    <img class="project" src="http://www.villagehatshop.com/photos/product/standard/4511390S60016/all/blues-crushable-wool-felt-trilby-fedora-hat.jpg" />
-    <img class="project" src="http://www.villagehatshop.com/photos/product/standard/4511390S170014/all/swinger-hat-with-bow.jpg" />
-    <img class="project" src="http://www.villagehatshop.com/photos/product/standard/4511390S60016/all/blues-crushable-wool-felt-trilby-fedora-hat.jpg" />
-    <img class="project" src="http://www.villagehatshop.com/photos/product/standard/4511390S170014/all/swinger-hat-with-bow.jpg" />
-    <img class="project" src="http://www.villagehatshop.com/photos/product/standard/4511390S60016/all/blues-crushable-wool-felt-trilby-fedora-hat.jpg" />
-    <img class="project" src="http://www.villagehatshop.com/photos/product/standard/4511390S170014/all/swinger-hat-with-bow.jpg" />
+    <div class="project_grid_item">
+      <div class="desc_wrapper">
+      <p class="project_desc">This is a project description, hopefully it looks nice by now, but probs not lol</p>
+    </div>
+      <img class="project_img" id="project_img" src="resources/hat.jpg" />
+      <canvas height="100" width="200" style="width: 200; height: 100;" id="canvas">
+		</canvas>
+    </div>
   </div>
 
   <footer>
@@ -30,6 +32,13 @@
 </div>
 
   <div id="particle-canvas"></div>
+
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="js/FastBlur.js"></script>
+  <script src="js/main.js"></script>
  </body>
 
  <style>
@@ -55,7 +64,7 @@
      particleColor: '#ff0000',
      //background: 'https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/demo-bg.jpg',
      interactive: false,
-     speed: 'medium',
+     speed: 'low',
      density: 'high'
    };
    var particleCanvas = new ParticleNetwork(canvasDiv, options);
