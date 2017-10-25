@@ -121,6 +121,43 @@ body {
   border-radius: 5%;
 }
 
+.project_enlarge {
+  font-size: 8px;
+  color: white;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  margin-left: 25%;
+}
+
+.project_module_wrap {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  top: 0%;
+  background: rgba(0,0,0,0.4);
+}
+
+.project_module_content {
+  margin: auto;
+  width: 70%;
+  height: auto;
+  background-color: white;
+  border-radius: 10%;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-top: 20px;
+}
+
+.project_module_content img {
+  max-width: 90%;
+}
+
+.project_module_content h2 {
+  width: 100%;
+}
+
 a {
   margin-right: 50%;
   display: inline-block;

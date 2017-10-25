@@ -26,6 +26,18 @@ function initProjectListeners()
     $(this).find('.desc_wrapper').css('display', 'none');
     $(this).find('#canvas').css('display', 'none');
   });
+
+  $(document).on('click', '.project_grid_item', function() {
+    $('.project_module_wrap').show();
+    // hide desc since it's absolute and won't hide until mouse mouse
+    $('.desc_wrapper').css('display', 'none');
+    $('#canvas').css('display', 'none');
+  });
+
+  $(document).on('click', '.project_module_wrap', function() {
+    $('.project_module_wrap').hide();
+  });
+
 }
 
 function initFooterListeners()
